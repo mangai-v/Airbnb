@@ -1,0 +1,119 @@
+:root{
+    --header-background:#000;
+    --airBnbBtn:#FF385C;
+    --header-color:#fff;
+    --logo-fill:#fff;
+    --base-color:#fff;
+    --icon-base-background:#fff;
+    --auth-menu-hover-background:rgba(255,255,255,0.15);
+}
+#airbnbExp{
+    background-color: var(--base-color);
+    height: auto;
+    width: 100%;
+}
+#airbnbExp article{
+    width: 85%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+#airbnbExp article h1{
+    padding: 20px 0;
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+#airbnbExp article main{
+    display: flex;
+    justify-content: space-between;
+}
+#airbnbExp .leftContainer {
+  background-image: url('../images/leftimg.webp');
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  flex-basis: 49%;
+  min-height: 600px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  border-radius: 20px;
+
+}
+#airbnbExp .rightContainer {
+  background-image: url('../images/rightimg.webp');
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  flex-basis: 49%;
+  min-height: 600px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  border-radius: 20px;
+}
+#airbnbExp article main aside{
+    margin: 20px 23px;
+    color: #fff;
+    padding: 20px;
+    display: inline-block;
+}
+#airbnbExp article main aside h2{
+    font-size: 2.3em;
+    font-weight: 600;
+}
+#airbnbExp article main aside a{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--header-background);
+    background-color: var(--base-color);
+    padding: 15px 30px;
+    font-weight: normal;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 30px 0;
+    text-transform: capitalize;
+}
+#airbnbExp article main aside a:hover{
+    background-color: #efefef;
+}
+#hoistingBlock{
+    width: 100%;
+}
+#hoistingBlock article{
+    width: 85%;
+    margin: 0 auto;
+}
+#hostingBlock .imgBlock{
+  background-image: url("../images/bottomimg.webp");
+  width:85%;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+  flex-basis: 49%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  border-radius: 10px;
+  height: 450px;
+}
+#hostingBlock h1{
+    margin: 30px 20px;
+    color: var(--base-color);
+    padding: 15px 30px;
+    font-weight: 900;
+    font-size: 60px;
+}
+#hostingBlock a{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--header-background);
+    background-color: var(--base-color);
+    padding: 10px 30px;
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 80px 40px;
+    text-transform: capitalize;
+}
+
+
+
+

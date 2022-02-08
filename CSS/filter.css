@@ -1,0 +1,184 @@
+:root{
+    --header-background:#000;
+    --airBnbBtn:#FF385C;
+    --header-color:#fff;
+    --logo-fill:#fff;
+    --base-color:#fff;
+    --icon-base-background:#fff;
+    --auth-menu-hover-background:rgba(255,255,255,0.15);
+}
+#FilterBlock {
+  background-color: var(--header-background);
+  height: 100px;
+}
+#FilterBlock article {
+  width: 60%;
+  margin: 0 auto;
+  background-color: #fff;
+  display: flex;
+  height: 70px;
+  align-items: stretch;
+  justify-content: flex-start;
+
+  border-radius: 50px;
+}
+#FilterBlock article div label {
+  width: 100%;
+  display: block;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.form-control {
+  padding: 15px 10px 0 20px;
+
+  border-right: 1px solid #ccc;
+}
+.form-control:last-child {
+  border: none;
+}
+#FilterBlock article div:nth-child(1) {
+  flex-basis: 35%;
+}
+
+#FilterBlock article div:nth-child(2) {
+  flex-basis: 20%;
+}
+
+#FilterBlock article div:nth-child(3) {
+  flex-basis: 20%;
+}
+
+#FilterBlock article div:nth-child(4) {
+  flex-basis: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+.form-control input {
+  border: none;
+  width: 100%;
+}
+.form-control:hover {
+  background-color: #efefef;
+  border-radius: 50px;
+}
+.form-control input {
+  background: transparent;
+}
+
+button {
+  background-color: rgb(230, 30, 77);
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: relative;
+  bottom: 5px;
+}
+button i {
+  color: #efefef;
+}
+
+input[type="date"]:required:invalid::-webkit-datetime-edit {
+  color: transparent;
+}
+input [type="date"]:focus::-webkit-datetime-edit {
+  color: #000 !important;
+}
+input::placeholder,
+.placeholder {
+  color: #999;
+  font-size: 13px;
+}
+/* Hide Calendar Icon In Chrome */
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+.form-control span button:focus {
+  transition: ease all 0.6s;
+  border-radius: 50px;
+  width: 100px;
+  height: 50px;
+}
+.form-control span button:focus::after {
+  content: "search";
+  color: #fff;
+  padding: 0 10px;
+  font-size: 16px;
+  
+}
+.locationBlock {
+  position: absolute;
+  background: #fff;
+  width: 509px;
+  height: 167px;
+  left: 270px;
+  border-radius: 20px;
+  top: 150px;
+  padding: 40px;
+  display: none;
+}
+.locationBlock button {
+  width: 422px;
+  height: 65px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 27px;
+  margin-top: 15px;
+}
+
+figure img{
+    width: 100%;
+    height: 100%;
+}
+#sliderBlock figure{
+  position: relative;
+}
+#sliderBlock .slider-content{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: var(--base-color);
+  text-align: center;
+}
+#sliderBlock .slider-content h2{
+  font-size: 45px;
+  padding: 20px 0;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+}
+#sliderBlock .slider-content button{
+  background-color: var(--base-color);
+  width: 144px;
+  height: 60px;
+  border-radius: 50px;
+  color: purple;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* sliderBlock2 starts here */
+.sliderBlock1 article{
+left: 50px;
+width: 85%;
+margin: 0 auto;
+  
+}
+.imageBlock{
+  display: flex;
+ 
+}
+.imageBlock .img1{
+  padding: 20px 20px;
+}
+
+.title{
+  background-color: red;
+  height: 200px;
+  padding: 10px;
+  color:var(--base-color);
+  font-size: 20px;
+ 
+}

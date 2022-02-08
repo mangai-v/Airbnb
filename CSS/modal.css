@@ -1,0 +1,51 @@
+:root{
+    --header-background:#000;
+    --airBnbBtn:#FF385C;
+    --header-color:#fff;
+    --logo-fill:#fff;
+    --base-color:#fff;
+    --icon-base-background:#fff;
+    --auth-menu-hover-background:rgba(255,255,255,0.15);
+}
+#modalSection{
+width: 100%;
+background-color: var(--header-background);
+}
+#modalSection article{
+    width: 800px;
+    background-color: var(--header-background);
+}
+.modalBlock{
+    width: 500px;
+    height: 500px;
+    position:fixed;
+    top: 50%;
+    background-color: var(--base-color);
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 0px #ccc;
+    display: none;
+}
+.modalBlock span{
+    float:left;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7px;
+    border-radius: 100%;
+
+}
+.modalBlock span i{
+    color: var(--airBnbBtn);
+}
+.modalBlock span:hover{
+    background-color: #efefef;
+    border-radius: 100%;
+}

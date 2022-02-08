@@ -1,0 +1,197 @@
+/* css function */
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+@import url('./filter.css');
+@import url('./tripBlock.css');
+@import url('./airExp.css');
+@import url('./footer.css');
+@import url('./modal.css');
+
+:root{
+    --header-background:#000;
+    --airBnbBtn:#FF385C;
+    --header-color:#fff;
+    --logo-fill:#fff;
+    --base-color:#fff;
+    --icon-base-background:#fff;
+    --auth-menu-hover-background:rgba(255,255,255,0.15);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    background-color: #fff;
+    
+}
+#_HeaderSection{
+    width: 100%;
+    height: 70px;
+    background-color:var(--header-background);
+    color: var(--header-color);
+}
+#_HeaderSection > article{
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    
+}
+/* for flex make one flex container */
+
+
+/* for js */
+.scrolled{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: var(--base-color) !important;
+    color: #000;
+}
+
+.hiddenBlock{
+    background-color: #fff;
+    color: #111;
+    border-radius: 20px;
+    display: none;
+    justify-content: space-between;
+    width: 300px;
+    border: 1px solid #ccc;
+    height: 40px;
+    align-items: center;
+    padding: 14px;
+    text-transform: capitalize;
+    position: relative;
+}
+.hiddenBlock span:nth-child(1){
+    display: flex;
+    justify-content: flex-start;
+
+}
+.hiddenBlock span:nth-child(2){
+    display: flex;
+    justify-content: flex-end;
+    background-color: #FF385C;
+    color: #fff;
+    height: 35px;
+    width: 35px;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    left: 260px;
+    
+}
+.logoBlock{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: flex-start;
+}
+.logoBlock a svg{
+    fill: var(--logo-fill);
+}
+
+.menuBlock{
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+}
+.authBlock{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menuBlock nav ul,.authBlock > ul{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+    
+}
+.menuBlock nav ul li a,.authBlock ul >li >a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--base-color);
+}
+.authBlock ul li a{
+    padding: 10px 10px !important;
+}
+.authBlock> ul> li:last-child >a{
+    background-color: var(--icon-base-background);
+    width: 70px;
+    border-radius: 20px;
+    /* border: 1px solid #efefef; */
+    display: block;
+    margin-left: 8px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.authBlock> ul >li:last-child> a span:first-child{
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   
+}
+.authBlock span.userIcon{
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    display: flex;
+    background-color:#666;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+ 
+   
+}
+.authBlock > ul>li a:hover {
+    background: var(--auth-menu-hover-background);
+    border-radius: 20px;
+
+}
+.authBlock ul>li:last-child > a:hover {
+    background: var(--base-color);
+    border-radius: 20px;
+}
+.authBlock >ul> li{
+    position: relative;
+}
+/* Dropdown starts here */
+#dropdownMenu{
+    width: 250px;
+    height: 250px;
+    background: var(--base-color);
+    position: absolute;
+    right: 0;
+    top: 51px;
+    border-radius: 14px;
+    display: none;
+    z-index: 1;
+}
+#dropdownMenu ul li{
+    list-style: none;
+    padding: 10px;
+}
+#dropdownMenu ul li >a{
+    color: var(--header-background);
+     
+}
+#dropdownMenu ul li >a:hover{
+   background-color: #666;
+    
+}
+.line{
+    border-bottom: 1px solid black;
+}
+
+
+
+
